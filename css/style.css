@@ -1,0 +1,330 @@
+/* -----------------------------------------
+   GENERAL
+----------------------------------------- */
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    background:url('../img/background.jpg');
+    font-family: 'Exo', sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+h1 {
+	font-weight:600;
+	font-size:50px;
+	color: #FFF;
+	line-height:70px;
+}
+
+h2 {
+	font-weight:400;
+	font-size:28px;
+	line-height:30px;
+	padding:0;
+	margin: 20px 0 30px 0;
+}
+
+h3 {
+	font-weight:200;
+	font-size:22px;
+	line-height:30px;
+	padding:0;
+	margin: 20px 0 30px 0;
+}
+
+h4 {
+	font-weight:200;
+	font-size:18px;
+	line-height:20px;
+	padding:0;
+	margin-bottom: 20px;
+}
+
+ul, ol{
+	margin: 0 !important; 
+	padding: 0 !important;
+}
+
+/* -----------------------------------------
+   BACKGROUND, HEADER
+----------------------------------------- */
+
+#home{
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	text-shadow: 0px 0px 6px #333;
+}
+
+.a-rounded{
+	margin: 0 auto;
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: rgba(18, 194, 138, 0);
+	-moz-border-radius: 80px;
+    -webkit-border-radius: 80px;
+    border-radius: 80px;
+    -webkit-transition: all 0.35s ease-in-out;
+   	-moz-transition: all 0.35s ease-in-out;
+   	-o-transition: all 0.35s ease-in-out;
+   	-ms-transition: all 0.35s ease-in-out;
+   	transition: all 0.35s ease-in-out;
+   	border: 2px solid #FFF;
+}
+
+.a-rounded:hover{
+	background: rgba(18, 194, 138, 1);
+	border: 2px solid #12c28a
+}
+
+.links{
+	margin-top: 40px; 
+	border-top: 1px dashed #FFF;
+	border-bottom: 1px dashed #FFF;
+	text-shadow: 0px 0px 6px #333;
+}
+
+.links a{
+	padding: 10px;
+	color: #FFF;
+	border: 1px solid #FFF;
+	display: block;
+	margin: 20px auto;
+	-webkit-transition: all 0.35s ease-in-out;
+   	-moz-transition: all 0.35s ease-in-out;
+   	-o-transition: all 0.35s ease-in-out;
+   	-ms-transition: all 0.35s ease-in-out;
+   	transition: all 0.35s ease-in-out;
+}
+
+.links a:hover{
+	background: #12c28a;
+	border: 1px solid #12c28a;
+}
+
+.canvas {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+/* -----------------------------------------
+   COOKIES MESSAGE
+----------------------------------------- */
+
+#cookies-message{
+	position: absolute;
+	z-index: 1001;
+	background: rgba(0,0,0,0.75);
+	font-size: 13px;
+	padding: 20px 15px 15px 10px;
+	bottom: 0px;
+}
+
+#cookies-message a.close-cookies{
+	width: 100%;
+	display: inline-block;
+}
+
+#cookies-message a.close-cookies img{
+	width: 18px;
+	float: right;
+}
+
+/* -----------------------------------------
+   FOOTER AND SOCIAL ICONS
+----------------------------------------- */
+
+.footer {
+	width: 100% !important;
+	background: none;
+	border-top: 1px solid #FFF;
+	position:absolute;
+	bottom: 0;
+	z-index:40;
+}
+
+p.footer-21bc {
+	width:100%;
+	text-align:center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+p.footer-21bc a{
+	color: #fff;
+	font-size: 15px;
+	display: inline-block;
+	-webkit-transition: all 0.25s ease-in-out;
+   	-moz-transition: all 0.25s ease-in-out;
+   	-o-transition: all 0.25s ease-in-out;
+   	-ms-transition: all 0.25s ease-in-out;
+   	transition: all 0.25s ease-in-out;
+}
+
+p.footer-21bc a:hover{
+	color: #12c28a;
+}
+
+/* -----------------------------------------
+   MEDIA QUERIES
+----------------------------------------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
+	ul, ol { 
+		margin: 0 0 10px; 
+		padding: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	#home, .contact{
+		padding: 0 20px;
+	}
+	h3{
+		font-size:18px;
+		line-height:26px;
+		margin-bottom: 20px;
+	}
+	.timer{
+		font-size: 25px;
+	    font-weight: 200;
+	    line-height: 35px;
+	}
+	.days, .hours, .minutes, .seconds{
+	    font-size: 35px;
+	    font-weight: 400;
+	}
+	.timer .separate{
+		font-size: 40px;
+	    font-weight: 100;
+	}
+	.team{
+		height: 200px;
+	}
+}
+
+@media (max-width: 480px) {
+	h3{
+		font-size:18px;
+		line-height:26px;
+		margin: 10px 0px;
+	}
+	h4{
+		font-size: 15px;
+	}
+	p{
+		font-size: 15px;
+	}
+	.team{
+		height: 200px;
+		width: 100%;
+		overflow: hidden;
+	}
+	.team img{
+		margin-top: -30px;
+	}
+	.first{
+		margin: 20px 0px;
+		float: left;
+	}
+	.team-social{
+		height: 55px;
+		bottom: -30px;	
+	}
+	.team-social ul{
+	   	margin-top: 20px;
+	}
+	.modal-header .close{
+		padding: 0px;
+		margin: 0px;
+	}
+	.modal-body{
+		margin-top: 10px;
+	}
+	.modal-body h4{
+		display: none;
+	}
+	.meet-us{
+		overflow-y: scroll !important;
+	}
+	ul.list-tweets{
+		height: 60px;
+	}	
+	textarea, input[type="text"], input[type="text"]:hover, input[type="text"]:active,input[type="text"]:focus{
+		width: 94%;
+		margin: 0px;
+	}	
+	.btn{
+		font-family: 'Exo', sans-serif;
+		background: #FFF;
+		border: 1px solid #FFF;
+		color: #333;
+		width: 100%;
+		margin-left: 0px;
+		height: 42px;
+		-webkit-transition: all 0.25s ease-in-out;
+	   	-moz-transition: all 0.25s ease-in-out;
+	   	-o-transition: all 0.25s ease-in-out;
+	   	-ms-transition: all 0.25s ease-in-out;
+	   	transition: all 0.25s ease-in-out;
+	   	position: relative;
+	   	overflow: hidden;
+	}	
+	.btn:hover{
+		background: #12c28a;
+		border: 1px solid #12c28a !important;
+		color: #FFF;
+	}	
+	.btn .singup-text{
+		top: 12px;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
+	}	
+	.btn .singup-image{
+		top: -25px;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
+	}	
+	.btn:hover .singup-text{
+		left: 0;
+		top: 50px;
+	}
+	.btn:hover .singup-image{
+		left: 0;
+		top: 12px;
+	}
+	.links, .singup{
+		margin-top: 15px;
+	}
+	.links a{
+		margin: 10px 0;
+	}
+	#cookies-message p{
+		font-size: 13px;
+	}
+
+}
